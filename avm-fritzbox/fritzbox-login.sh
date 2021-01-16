@@ -7,11 +7,11 @@
 # export tempip=fritz.powerline
 # export tempid=/tmp/avmsidpowerline
 #
-# the following variables will be set in fritzbox-init.sh
-# avmfbip=${tempip:-fritz.box}
-# avmfbuser=${tempuser:-""}
-# avmfbpwd=${temppwd:-"password"}
-# avmsidfile=${tempid:-/tmp/avmsid}
+# the following variables will be overwritten in fritzbox-init.sh
+avmfbip=${tempip:-fritz.box}
+avmfbuser=${tempuser:-""}
+avmfbpwd=${temppwd:-"password"}
+avmsidfile=${tempid:-/tmp/avmsid}
 
 source ./fritzbox-init.sh
 
